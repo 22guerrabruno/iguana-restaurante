@@ -54,16 +54,11 @@ const OurMenuPage = () => {
             INTERNACIONAL: Café o Té, tostada, croissant y zumo de naranja
           </p>
           <p className='font-raleway-400 text-xs mb-1'>
-            HOLANDES: Café o Té, huevos, jamón, queso, Frankfurt, bacon y zumo
-            de naranja
+            HUEVOS: Café o Té, huevos,tostada (aceite o tomate)y zumo de naranja
           </p>
           <p className='font-raleway-400 text-xs mb-1'>
             FRESCO: Café o Té, ensalada de fruta fresca, tostada y zumo de
             naranja
-          </p>
-          <p className='font-raleway-400 text-xs mb-1'>
-            INGLÉS: Café o Té, huevo, bacon, Frankfurt, alubias con tomate,
-            tostada y zumo de naranja
           </p>
         </div>
         <hr className='h-1 border-1 w-full border-gray-200 mt-10 mb-10' />
@@ -71,9 +66,7 @@ const OurMenuPage = () => {
           <h3 className='font-raleway-800 font-semibold mb-2'>
             ENTRADAS Y PARA PICAR
           </h3>
-          <p className='font-raleway-400 text-xs mb-1'>
-            Huevos rotos con setas y foie
-          </p>
+
           <p className='font-raleway-400 text-xs mb-1'>Carpaccio de salmón</p>
           <p className='font-raleway-400 text-xs mb-1'>
             Queso camembert en costra con mermelada de frutos del bosque
@@ -81,39 +74,27 @@ const OurMenuPage = () => {
           <p className='font-raleway-400 text-xs mb-1'>
             Queso camembert trufado al horno
           </p>
-          <p className='font-raleway-400 text-xs mb-1'>
-            Ravioli crujiente de butifarra negra con tierra de setas y esféricos
-            de manzana
-          </p>
+
           <p className='font-raleway-400 text-xs mb-1'>
             Delicia de gambas con sus dos salsas
           </p>
           <p className='font-raleway-400 text-xs mb-1'>
-            Ocho croquetas, 4 sabores, 3 salsas
+            Croquetas de jamon ibérico (6 unidades)
           </p>
-          <p className='font-raleway-400 text-xs mb-1'>Provolone a la miel</p>
+
           <p className='font-raleway-400 text-xs mb-1'>
             Tataki de atún con costra de sésamo y teriyaki a nuestro estilo
           </p>
           <p className='font-raleway-400 text-xs mb-1'>
-            Pulpo a la brasa con meloso de patatas
+            Pulpo a la brasa con meloso de pimiento rojo
           </p>
+          <p className='font-raleway-400 text-xs mb-1'>Mejillones Thai</p>
           <p className='font-raleway-400 text-xs mb-1'>
-            Mejillones al vino blanco
+            Calamar Romana con dos mayonesas
           </p>
-          <p className='font-raleway-400 text-xs mb-1'>
-            Calamar en su costra negra con dos mayonesas
-          </p>
-          <p className='font-raleway-400 text-xs mb-1'>
-            Carpaccio de pulpo con vinagreta a nuestro estilo
-          </p>
+
           <p className='font-raleway-400 text-xs mb-1'>Sardinas grilladas</p>
-          <p className='font-raleway-400 text-xs mb-1'>
-            Sardinas ahumadas con tomate en textura, albahaca y mozzarella
-          </p>
-          <p className='font-raleway-400 text-xs mb-1'>
-            Terrina de foie con cremoso de cítrico y sus frutas caramelizadas
-          </p>
+
           <p className='font-raleway-400 text-xs mb-1'>
             Patatas fondant y nuestra salsa brava
           </p>
@@ -124,7 +105,7 @@ const OurMenuPage = () => {
           <p className='font-raleway-400 text-xs mb-1'>
             Jamón ibérico de bellota extra
           </p>
-          <p className='font-raleway-400 text-xs mb-1'>Tempura de verdura</p>
+
           <p className='font-raleway-400 text-xs mb-1'>Tartar de salmón</p>
         </div>
         <hr className='h-1 border-1 w-full border-gray-200 mt-10 mb-10' />
@@ -144,7 +125,7 @@ const OurMenuPage = () => {
           </p>
           <p className='font-raleway-400 text-xs mb-1'>
             De salmón (brotes, salmón ahumado, dátiles, nueces, queso feta y
-            salsa de Pedro Ximenez)
+            salsa de Eneldo)
           </p>
           <p className='font-raleway-400 text-xs mb-1'>
             Carpesse (tomate, mozzarela y albahaca)
@@ -152,10 +133,6 @@ const OurMenuPage = () => {
           <p className='font-raleway-400 text-xs mb-1'>
             Ventresca (ventresca de atún, tomate, cebolla tierna y aceite de
             oliva especiado)
-          </p>
-          <p className='font-raleway-400 text-xs mb-1'>
-            Bacalao y naranja (bacalao y naranja con cebolla tierna y vinagreta
-            suave)
           </p>
         </div>
         <hr className='h-1 border-1 w-full border-gray-200 mt-10 mb-10' />

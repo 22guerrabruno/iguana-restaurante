@@ -8,8 +8,8 @@ const Gastronomy = () => {
     <div className='flex items-center justify-center w-full h-fit gap-14 flex-col sm:flex-row'>
       <div className=''>
         <img
-          src='/cordero.jpg'
-          alt='cocktail'
+          src='https://res.cloudinary.com/duihhp37l/image/upload/v1724417640/cordero_ogy1od.jpg'
+          alt='cordero'
           className='rounded-full h-52 w-52 object-square'
         />
       </div>
