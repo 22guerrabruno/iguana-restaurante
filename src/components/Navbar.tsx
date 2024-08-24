@@ -18,7 +18,7 @@ const Navbar = () => {
   }, [setIsDropdownOpen]);
 
   const variant = {
-    hidden: { opacity: 1, x: 400 },
+    hidden: { opacity: 1, x: 200 },
     visible: { opacity: 1, x: 0, rotate: 360 },
   };
 
@@ -30,7 +30,7 @@ const Navbar = () => {
         prefetch={false}>
         <motion.div
           animate={['hidden', 'visible']}
-          initial={{ x: 400, opacity: 1 }}
+          initial={{ x: 200, opacity: 1 }}
           variants={variant}
           transition={{ duration: 1 }}>
           <Logo />
