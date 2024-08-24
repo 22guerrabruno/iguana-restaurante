@@ -14,11 +14,25 @@ import Pictures from '@/components/Pictures';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/context/LangusgeContext';
 import Link from 'next/link';
-
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 import Location from '@/components/Location';
 import Logo from '@/components/Logo';
 
 export default function Home() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+  const variants2 = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, scale: 1 },
+  };
   const comment = [
     '/comment1.png',
     '/comment2.png',
@@ -27,6 +41,7 @@ export default function Home() {
     '/comment5.png',
   ];
   const { isEnglish } = useLanguage();
+
   return (
     <main className='flex flex-col items-center justify-center gap-2 w-full scroll-smooth transition duration-300'>
       <div className='w-full'>
@@ -35,9 +50,27 @@ export default function Home() {
       <div
         className='w-full flex flex-col lg:flex-row items-center justify-between mt-20 h-fit gap-8 p-4'
         id='carta'>
-        <Card />
-        <Dessert />
-        <Cocktails />
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={variants2}
+          transition={{ duration: 0.2 }}>
+          <Card />
+        </motion.div>
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={variants2}
+          transition={{ duration: 0.7 }}>
+          <Dessert />
+        </motion.div>
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={variants2}
+          transition={{ duration: 1 }}>
+          <Cocktails />
+        </motion.div>
       </div>
       <div className='w-full flex flex-col lg:flex-row items-center justify-between mt-20 h-fit gap-8 pb-14'>
         <ExtraContent />
@@ -48,9 +81,30 @@ export default function Home() {
       <hr className='h-1 border-1 w-full border-gray-200 mt-10' />
       <div className='w-full flex flex-col lg:flex-row items-center justify-center mt-10 h-fit gap-8 p-4 '>
         <div className='flex flex-col items-center justify-center gap-6 w-full p-4'>
-          <HealthyFood />
-          <Gastronomy />
-          <BestCocktails />
+          <motion.div
+            initial='hidden'
+            animate={inView ? 'visible' : 'hidden'}
+            variants={variants}
+            transition={{ duration: 0.5 }}
+            ref={ref}>
+            <HealthyFood />
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            animate={inView ? 'visible' : 'hidden'}
+            variants={variants}
+            transition={{ duration: 1 }}
+            ref={ref}>
+            <Gastronomy />
+          </motion.div>
+          <motion.div
+            initial='hidden'
+            animate={inView ? 'visible' : 'hidden'}
+            variants={variants}
+            transition={{ duration: 1.5 }}
+            ref={ref}>
+            <BestCocktails />
+          </motion.div>
         </div>
         <div className='flex justify-center items-center '>
           <CartelTel />

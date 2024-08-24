@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Button } from './ui/button';
 import { useLanguage } from '@/context/LangusgeContext';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -16,13 +17,24 @@ const Navbar = () => {
     setIsDropdownOpen((prevIsDropdownOpen) => !prevIsDropdownOpen);
   }, [setIsDropdownOpen]);
 
+  const variant = {
+    hidden: { opacity: 1, x: 400 },
+    visible: { opacity: 1, x: 0, rotate: 360 },
+  };
+
   return (
     <header className='bg-white lg:px-6 h-fit flex items-center justify-between shadow-sm text-black py-2 z-50'>
       <Link
         href='/'
         className='flex items-center justify-center'
         prefetch={false}>
-        <Logo />
+        <motion.div
+          animate={['hidden', 'visible']}
+          initial={{ x: 400, opacity: 1 }}
+          variants={variant}
+          transition={{ duration: 1 }}>
+          <Logo />
+        </motion.div>
         <span className='sr-only'>Iguana Beach Bar & Cocktail`s</span>
       </Link>
       <div className='w-full flex items-center justify-end mr-4 gap-2'>
