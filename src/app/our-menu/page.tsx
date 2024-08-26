@@ -1,6 +1,7 @@
 'use client';
 /* eslint-disable @next/next/no-img-element */
 import { useLanguage } from '@/context/LangusgeContext';
+import Link from 'next/link';
 
 const OurMenuPage = () => {
   const { isEnglish } = useLanguage();
@@ -15,31 +16,25 @@ const OurMenuPage = () => {
           <h2 className='flex w-full items-center justify-center font-raleway-800 text-4xl font-bold'>
             {isEnglish ? 'Food Menu' : 'Menu Comidas'}
           </h2>
-          <a
-            href='/comida-iguana.pdf'
-            target='_blank'
-            rel='noopener noreferrer'>
+          <Link href='/our-menu/food'>
             <img
               src='/comida2.jpg'
               alt='comida'
               className=' w-72 h-72 rounded-full object-cover'
             />
-          </a>
+          </Link>
         </div>
         <div className='flex flex-col items-center justify-center flex-grow gap-4 mb-10 md:mb-0'>
           <h2 className='flex w-full items-center justify-center font-raleway-800 text-4xl font-bold'>
             {isEnglish ? 'Drinks Menu' : 'Menu de Bebidas'}
           </h2>
-          <a
-            href='/bebida-iguana.pdf'
-            target='_blank'
-            rel='noopener noreferrer'>
+          <Link href='/our-menu/drinks'>
             <img
               src='/cocktails-bar.jpeg'
               alt='drinks'
               className=' w-72 h-72 rounded-full object-cover'
             />
-          </a>
+          </Link>
         </div>
       </div>
       <div className='flex flex-col items-center justify-center mt-10'>

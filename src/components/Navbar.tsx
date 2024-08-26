@@ -112,7 +112,7 @@ const Navbar = () => {
         <ul className=' lg:hidden absolute bg-sky-300 shadow-md rounded-md mt-2 py-1 w-48 dropdown-container top-16 right-3 z-50'>
           <li className='px-4 py-2 hover:bg-gray-100 text-white hover:text-gray-700'>
             <Link
-              href='#about'
+              href='/about-us'
               onClick={(e) => {
                 e.stopPropagation();
 

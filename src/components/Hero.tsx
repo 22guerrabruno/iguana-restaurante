@@ -16,7 +16,7 @@ const Hero = () => {
       <div
         className='absolute inset-0 flex font-bold justify-center items-center text-white
        font-raleway '>
-        <Link href='#carta'>
+        <Link href='/about-us'>
           <p className=' bg-black bg-opacity-35 py-5 px-8'>
             <span className=' border-2 border-white px-6 py-3 hover:bg-sky-300 hover:text-natural-300'>
               {isEnglish ? 'CONOCENOS' : 'Conocenos'}

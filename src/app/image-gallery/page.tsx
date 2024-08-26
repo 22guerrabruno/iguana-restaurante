@@ -65,9 +65,7 @@ const ImageGallery = () => {
             <img
               src={selectedImage}
               alt=''
-              className={clsx(
-                'w-[80%] max-h-[80%] aspect-auto object-cover rounded-lg cursor-pointer'
-              )}
+              className={clsx('w-[80%] max-h-[80%]  rounded-lg cursor-pointer')}
             />
           </div>
         </div>

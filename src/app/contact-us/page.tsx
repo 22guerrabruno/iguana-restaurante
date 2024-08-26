@@ -5,6 +5,7 @@ import { useLanguage } from '@/context/LangusgeContext';
 import { sendNewContact } from '@/utils/send-email';
 import { Link, Loader2 } from 'lucide-react';
 import { useState } from 'react';
+import { set } from 'react-hook-form';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { SiTripadvisor } from 'react-icons/si';
 
@@ -19,12 +20,17 @@ const ContactUs = () => {
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Message:', message);
+    setLoading(true);
     try {
       const res = sendNewContact(name, email, message);
+      setName('');
+      setEmail('');
+      setMessage('');
       console.log(res);
     } catch (error: unknown) {
       console.log(error);
     }
+    setLoading(false);
   };
   return (
     <div className='w-full flex flex-col items-center justify-center gap-2 mt-10'>
