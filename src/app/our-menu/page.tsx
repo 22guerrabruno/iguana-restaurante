@@ -13,27 +13,33 @@ const OurMenuPage = () => {
       <hr className='h-1 border-1 w-full border-gray-200 mt-10 mb-10' />
       <div className='flex flex-col items-center justify-center w-full p-4 md:flex-row flex-grow gap-4'>
         <div className='flex flex-col items-center justify-center flex-grow gap-4 mb-10 md:mb-0'>
-          <h2 className='flex w-full items-center justify-center font-raleway-800 text-4xl font-bold'>
+          <h2 className='flex w-full items-center justify-center font-vibes text-4xl font-bold'>
             {isEnglish ? 'Food Menu' : 'Menu Comidas'}
           </h2>
-          <Link href='/our-menu/food'>
+          <Link
+            href='/our-menu/food'
+            className='flex items-center justify-center flex-col gap-4 font-raleway-800 font-bold'>
             <img
               src='/comida2.jpg'
               alt='comida'
               className=' w-72 h-72 rounded-full object-cover'
             />
+            {isEnglish ? 'Click to show' : 'Click para ver'}
           </Link>
         </div>
         <div className='flex flex-col items-center justify-center flex-grow gap-4 mb-10 md:mb-0'>
-          <h2 className='flex w-full items-center justify-center font-raleway-800 text-4xl font-bold'>
+          <h2 className='flex w-full items-center justify-center font-vibes text-4xl font-bold'>
             {isEnglish ? 'Drinks Menu' : 'Menu de Bebidas'}
           </h2>
-          <Link href='/our-menu/drinks'>
+          <Link
+            href='/our-menu/drinks'
+            className='flex items-center justify-center flex-col gap-4 font-raleway-800 font-bold'>
             <img
               src='/cocktails-bar.jpeg'
               alt='drinks'
               className=' w-72 h-72 rounded-full object-cover'
             />
+            {isEnglish ? 'Click to show' : 'Click para ver'}
           </Link>
         </div>
       </div>
