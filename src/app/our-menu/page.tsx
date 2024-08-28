@@ -18,7 +18,7 @@ const OurMenuPage = () => {
           </h2>
           <Link
             href='/our-menu/food'
-            className='flex items-center justify-center flex-col gap-4 font-raleway-800 font-bold'>
+            className='flex items-center justify-center flex-col gap-4 font-raleway-800 font-bold '>
             <img
               src='/comida2.jpg'
               alt='comida'
@@ -26,6 +26,18 @@ const OurMenuPage = () => {
             />
             {isEnglish ? 'Click to show' : 'Click para ver'}
           </Link>
+          {/* <a
+            href='https://res.cloudinary.com/duihhp37l/image/upload/v1724836110/comida-iguana_gkkqq1.pdf'
+            target='_blank'
+            rel='noreferrer'
+            className='flex items-center justify-center flex-col gap-4 font-raleway-800 font-bold md:hidden'>
+            <img
+              src='/comida2.jpg'
+              alt='comida'
+              className=' w-72 h-72 rounded-full object-cover'
+            />
+            {isEnglish ? 'Click to show' : 'Click para ver'}
+          </a> */}
         </div>
         <div className='flex flex-col items-center justify-center flex-grow gap-4 mb-10 md:mb-0'>
           <h2 className='flex w-full items-center justify-center font-vibes text-4xl font-bold'>
