@@ -5,6 +5,7 @@ const DrinkMenuPage = () => {
         src='https://res.cloudinary.com/duihhp37l/image/upload/v1724836110/bebida-iguana_nniamt.pdf'
         width={300}
         height={900}
+        allowFullScreen
         className='w-full'></iframe>
     </div>
   );
