@@ -27,7 +27,7 @@ const OurMenuPage = () => {
             {isEnglish ? 'Click to show' : 'Click para ver'}
           </Link>
           <a
-            href='https://res.cloudinary.com/duihhp37l/image/upload/v1724836110/comida-iguana_gkkqq1.pdf'
+            href='https://res.cloudinary.com/duihhp37l/image/upload/v1743322480/MENU_IGUANA_COMIDA_2025_tuuahg.pdf'
             target='_blank'
             rel='noreferrer'
             className='flex items-center justify-center flex-col gap-4 font-raleway-800 font-bold md:hidden'>
@@ -54,7 +54,7 @@ const OurMenuPage = () => {
             {isEnglish ? 'Click to show' : 'Click para ver'}
           </Link>
           <a
-            href='https://res.cloudinary.com/duihhp37l/image/upload/v1724836110/bebida-iguana_nniamt.pdf'
+            href='https://res.cloudinary.com/duihhp37l/image/upload/v1743323004/bebidaiguana2_mc2gc5.pdf'
             target='_blank'
             rel='noreferrer'
             className='flex items-center justify-center flex-col gap-4 font-raleway-800 font-bold md:hidden'>
